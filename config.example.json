@@ -1,0 +1,5 @@
+{
+  "PORT": 3001,
+  "HOST": "https://api.beta.instructure.com",
+  "ACCESS_KEY": ""
+}

@@ -1,0 +1,16 @@
+{
+  "name": "canvas-dev-proxy",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronshaf/canvas-dev-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aaronshaf/canvas-dev-proxy/issues"
+  },
+  "homepage": "https://github.com/aaronshaf/canvas-dev-proxy",
+  "dependencies": {
+    "request": "~2.27.0",
+    "express": "~3.4.6"
+  }
+}
