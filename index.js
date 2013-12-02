@@ -6,6 +6,17 @@ var app = express();
 var config = fs.readFileSync('config.json','utf8');
 config = JSON.parse(config);
 
+app.all('*', function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, PATCH, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
+  
+  if (req.method == 'OPTIONS') {
+    return res.send(200);
+  }
+  next();
+});
+
 app.all('*',function(req, res) {
   request({
     url: config.HOST + req.url,
